@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fijación sobre Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FIJACIÓN SOBRE TEXTOS</h1>
+        <div id="info">
+            <p>Este ejercicio está formado por un texto presentado en dos columnas estilo periodístico y atravesados por líneas verticales. Debes centrar la mirada en las líneas verticales de cada columna mientras la deslizas hacia abajo como lo va indicando la placa visualizadora.</p>
+            <p>Las líneas verticales te indican las fijaciones que debes hacer para cada línea de texto.</p>
+            <p>Lo ideal es que disminuyas el número de fijaciones que realiza el ojo al leer y puedas percibir por cada línea de texto, y con un solo golpe de vista, tres o más palabras.</p>
+            <p>Este ejercicio te servirá para ampliar tu ángulo lector y así captar más palabras con una sola fijación.</p>
+            <p>Es bueno que trabajes comprensión lectora, por lo tanto intenta comprender sin realizar vocalización o subvocalización.</p>
+        </div>
+        <div id="controles" class="controls">
+            <label for="speed">Selecciona la velocidad (milisegundos por fijación):</label>
+            <input type="number" id="speed" value="300">
+            <button id="start-btn">Iniciar</button>
+        </div>
+        <div id="text-container" class="hidden">
+            <div id="column-left" class="column left-column hidden">
+                <p>En una pequeña aldea, al pie de las montañas,</p>
+                <p>vivía un anciano sabio conocido por sus historias de tiempos antiguos,</p>
+                <p>con su viejo abrigo de lana y su fiel perro pastor.</p>
+                <p>Solía cenar pan duro con queso de cabra,</p>
+                <p>y las noches frías se calentaba al fuego, contando relatos de héroes olvidados,</p>
+                <p>en los días de mercado disfrutaba de algún guiso sencillo y una copa de vino,</p>
+                <p>mientras el viento soplaba fuerte por las colinas.</p>
+                <p>Su casa estaba decorada con tapices antiguos,</p>
+                <p>y en los días de fiesta, vestía una capa larga bordada con hilos de oro,</p>
+                <p>acompañada de sus viejas botas de cuero,</p>
+                <p>y durante el resto de la semana, se conformaba con ropa sencilla pero limpia.</p>
+                <p>Tenía un nieto que vivía con él, de unos quince años,</p>
+                <p>y un gato perezoso que siempre estaba dormido junto al fuego,</p>
+                <p>y un amigo del pueblo que lo visitaba de vez en cuando para ayudarle con los cultivos.</p>
+            </div>
+            <div id="column-right" class="column right-column hidden">
+                <p>Nuestro sabio anciano rondaba los setenta años;</p>
+                <p>era de rostro curtido por el sol, con manos fuertes y arrugadas;</p>
+                <p>amaba las mañanas tranquilas y los paseos por el campo.</p>
+                <p>Algunos decían que había sido un gran aventurero en su juventud,</p>
+                <p>aunque otros lo conocían solo por sus largas caminatas por los senderos montañosos,</p>
+                <p>y por su habilidad para leer las estrellas por las noches.</p>
+                <p>Pero poco importaba lo que había sido antes; lo que más valoraban en el pueblo era su sabiduría.</p>
+                <p>Solía dedicar sus tardes a enseñar a los niños del pueblo a leer,</p>
+                <p>o a contar historias bajo la sombra de los viejos robles,</p>
+                <p>mientras el sonido del río le recordaba los días en que había navegado por tierras lejanas;</p>
+                <p>y con cada historia, transmitía una lección que quedaba grabada en la memoria de sus oyentes.</p>
+                <p>Había llenado su casa con pergaminos antiguos y libros de todas partes del mundo,</p>
+                <p>y siempre encontraba un momento para compartir un nuevo relato con quienes quisieran escucharlo.</p>
+            </div>
+            
+            <!-- Dos líneas verticales en cada columna -->
+            <div id="line1" class="vertical-line left-line1 hidden"></div>
+            <div id="line2" class="vertical-line left-line2 hidden"></div>
+            <div id="line3" class="vertical-line right-line1 hidden" ></div>
+            <div id="line4" class="vertical-line right-line2 hidden"></div>
+        </div>
+        <div id="timer" class="hidden">Tiempo: 3:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
